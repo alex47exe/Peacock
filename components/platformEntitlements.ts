@@ -22,6 +22,35 @@ import type { NamespaceEntitlementEpic, RequestWithJwt } from "./types/types"
 import { getUserData } from "./databaseHandler"
 import { log, LogLevel } from "./loggingInterop"
 
+export const H1_EPIC_ENTITLEMENTS = [
+    "0a73eaedcac84bd28b567dbec764c5cb", // Hitman 1 Standard Edition 
+    "81aecb49a60b47478e61e1cbd68d63c5", // Hitman 1 GOTY upgrade
+]
+
+export const H1_STEAM_ENTITLEMENTS = [
+    "737780", // HITMAN - GOTY Suit Pack (HITMAN - GOTY Outfit Bundle)
+    "725353", // HITMAN - Bonus Campaign Patient Zero
+    "725352", // HITMAN - GOTY Cowboy Suit
+    "725351", // HITMAN - GOTY Raven Suit
+    "725350", // HITMAN - GOTY Clown Suit
+    "664270", // HITMAN - Japanese V/O Pack
+    "588780", // HITMAN - Digital Bonus Content
+    "588660", // HITMAN - Blood Money Requiem Pack
+    "505201", // HITMAN - Intro Pack
+    "505200", // HITMAN - FULL EXPERIENCE Upgrade
+    "505180", // HITMAN - FULL EXPERIENCE
+    "440972", // HITMAN - White Rubber Duck Explosive
+    "440971", // HITMAN - Silenced ICA-19 Chrome Pistol
+    "440970", // HITMAN - Requiem Legacy Suit
+    "440962", // HITMAN: Episode 6 - Hokkaido
+    "440961", // HITMAN: Episode 5 - Colorado
+    "440960", // HITMAN: Episode 4 - Bangkok
+    "440940", // HITMAN: Bonus Episode
+    "440930", // HITMAN: Episode 3 - Marrakesh
+    "439890", // HITMAN: Episode 2 - Sapienza
+    "439870", // HITMAN: Episode 1 - Paris
+]
+
 export const H3_EPIC_ENTITLEMENTS = [
     // DUBAI:
     "06d4d61bbb774ca99c1661bee04fbde0",
@@ -91,46 +120,75 @@ export const H3_EPIC_ENTITLEMENTS = [
     "70a9afcc8de84b6ab0f2b45b2018559b",
 ]
 
+export const H3_STEAM_ENTITLEMENTS = [
+    "3254350", // HITMAN 3 - The Splitter Pack
+    "3110360", // HITMAN 3 - The Drop Pack
+    "2973650", // HITMAN 3 - The Disruptor Pack
+    "2828470", // HITMAN 3 - The Undying Pack
+    "2475260", // HITMAN 3 - Sarajevo Six Campaign Pack
+    "2184791", // HITMAN 3 - Makeshift Pack
+    "2184790", // HITMAN 3 - Street Art Pack
+    "1843460", // HITMAN 3 Access Pass: HITMAN 1 GOTY Edition
+    "1829605", // HITMAN 3 - Dubai
+    "1829604", // HITMAN 3 - Dartmoor
+    "1829603", // HITMAN 3 - Berlin
+    "1829602", // HITMAN 3 - Chongqing
+    "1829601", // HITMAN 3 - Mendoza
+    "1829600", // HITMAN 3 - Carpathian Mountains
+    "1829596", // HITMAN 3 - Trinity Pack
+    "1829595", // HITMAN 3 Access Pass: HITMAN 1 GOTY Upgrade
+    "1829594", // HITMAN 3 - VR Access
+    "1829593", // HITMAN 3 Access Pass: HITMAN 1 Complete First Season
+    "1829592", // HITMAN 3 Access Pass: HITMAN 2 Standard
+    "1829591", // HITMAN 3 - Deluxe Pack
+    "1829590", // HITMAN 3 Access Pass: HITMAN 2 Expansion
+    "1829587", // HITMAN 3 - Seven Deadly Sins Collection
+    "1829586", // HITMAN 3 - Seven Deadly Sins Act 7: Wrath
+    "1829585", // HITMAN 3 - Seven Deadly Sins Act 6: Envy
+    "1829584", // HITMAN 3 - Seven Deadly Sins Act 5: Gluttony
+    "1829583", // HITMAN 3 - Seven Deadly Sins Act 4: Lust
+    "1829582", // HITMAN 3 - Seven Deadly Sins Act 3: Sloth
+    "1829581", // HITMAN 3 - Seven Deadly Sins Act 2: Pride
+    "1829580", // HITMAN 3 - Seven Deadly Sins Act 1: Greed
+]
+
 export const H2_STEAM_ENTITLEMENTS = [
-    "863550", // Hitman 2
-    "950540", // Hitman - Legacy: Paris
-    "950550", // Hitman - Legacy: Sapienza
-    "950551", // Hitman - Legacy: Marrakesh
-    "950552", // Hitman - Legacy: Bonus Missions
-    "950553", // Hitman - Legacy: Bankok
-    "950554", // Hitman - Legacy: Colorado
-    "950555", // Hitman - Legacy: Hokkaido
-    "950556", // Hitman 2 - Hawke's Bay
-    "950557", // Hitman 2 - Miami
-    "950558", // Hitman 2 - Santa Fortuna
-    "950559", // Hitman 2 - Mumbai
-    "950560", // Hitman 2 - Whittleton Creek
-    "950561", // Hitman 2 - Isle of Sgàil
-    "950562", // Hitman 2 - Himmelstein
-    "953090", // Hitman 2 - Bonus Campaign Patient Zero
-    "953091", // Hitman 2 - GOTY Cowboy Suit
-    "953092", // Hitman 2 - GOTY Raven Suit
-    "953093", // Hitman 2 - GOTY Clown Suit
-    "953094", // Hitman 2 - White Rubber Duck Explosive
-    "953095", // Hitman 2 - Silenced ICA-19 Chrome Pistol
-    "953096", // Hitman 2 - Requiem Legacy Suit
-    "957690", // Hitman 2 - Expansion Pass
-    "957691", // Hitman 2 - Expansion Pack 1
-    "957692", // Hitman 2 - Expansion Pack 2
-    "957693", // Hitman 2 - Winter Sports Pack
-    "957694", // Hitman 2 - Smart Casual Pack
-    "957695", // Hitman 2 - Special Assignments Pack 1
-    "957696", // Hitman 2 - Special Assignments Pack 2
-    "957697", // Hitman 2 - Executive Pack
-    "957698", // Hitman 2 - Collector's Pack
-    "957730", // Hitman 2 - New York
-    "957731", // Hitman 2 - Haven Island
-    "957733", // Hitman 2 - Hantu Port
-    "957735", // Hitman 2 - Siberia
-    "960831", // Hitman 2 - GOTY Legacy Pack
-    "960832", // Hitman 2 - GOTY Upgrade Legacy Pack
-    "972340", // Hitman 2 - Gold Edition
-    "977941", // Hitman 2 - Early Access
+    "1131050", // HITMAN 2 - Silver to Gold Upgrade
+    "1083220", // HITMAN 2 - Miami Bundle
+    "960832", // HITMAN 2 - GOTY Legacy Pack Upgrade
+    "960831", // HITMAN 2 - GOTY Legacy Pack
+    "957735", // HITMAN 2 - Siberia
+    "957733", // HITMAN 2 - Hantu Port
+    "957731", // HITMAN 2 - Haven Island
+    "957730", // HITMAN 2 - New York
+    "957698", // HITMAN 2 - Collector's Pack
+    "957697", // HITMAN 2 - Executive Pack
+    "957696", // HITMAN 2 - Special Assignments Pack 2
+    "957695", // HITMAN 2 - Special Assignments Pack 1
+    "957694", // HITMAN 2 - Smart Casual Pack
+    "957693", // HITMAN 2 - Winter Sports Pack
+    "957690", // HITMAN 2 - Expansion Pass
+    "953096", // HITMAN 2 - Requiem Legacy Suit
+    "953095", // HITMAN 2 - Silenced ICA-19 Chrome Pistol
+    "953094", // HITMAN 2 - White Rubber Duck Explosive
+    "953093", // HITMAN 2 - GOTY Clown Suit
+    "953092", // HITMAN 2 - GOTY Raven Suit
+    "953091", // HITMAN 2 - GOTY Cowboy Suit
+    "953090", // HITMAN 2 - Bonus Campaign Patient Zero
+    "950562", // HITMAN 2 - Himmelstein
+    "950561", // HITMAN 2 - Isle of Sgàil
+    "950560", // HITMAN 2 - Whittleton Creek
+    "950559", // HITMAN 2 - Mumbai
+    "950558", // HITMAN 2 - Santa Fortuna
+    "950557", // HITMAN 2 - Miami
+    "950556", // HITMAN 2 - Hawke's Bay
+    "950555", // HITMAN - Legacy: Hokkaido
+    "950554", // HITMAN - Legacy: Colorado
+    "950553", // HITMAN - Legacy: Bangkok
+    "950552", // HITMAN - Legacy: Bonus Missions
+    "950551", // HITMAN - Legacy: Marrakesh
+    "950550", // HITMAN - Legacy: Sapienza
+    "950540", // HITMAN - Legacy: Paris
 ]
 
 export const STEAM_NAMESPACE_2016 = "236870"
@@ -139,6 +197,8 @@ export const STEAM_NAMESPACE_SCPC = "783781"
 export const STEAM_NAMESPACE_2018 = "863550"
 export const EPIC_NAMESPACE_2021 = "ed55aa5edc5941de92fd7f64de415793"
 export const STEAM_NAMESPACE_2021 = "1659040"
+
+export const ALL_ENTITLEMENTS = [STEAM_NAMESPACE_2016, EPIC_NAMESPACE_2016, STEAM_NAMESPACE_SCPC, STEAM_NAMESPACE_2018, EPIC_NAMESPACE_2021, STEAM_NAMESPACE_2021].concat(H1_EPIC_ENTITLEMENTS).concat(H1_STEAM_ENTITLEMENTS).concat(H2_STEAM_ENTITLEMENTS).concat(H3_EPIC_ENTITLEMENTS).concat(H3_STEAM_ENTITLEMENTS)
 
 export const SCPC_ENTITLEMENTS = [STEAM_NAMESPACE_2016, "783781"]
 
