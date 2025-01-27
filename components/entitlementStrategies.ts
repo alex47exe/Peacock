@@ -20,11 +20,13 @@ import { AxiosError, AxiosResponse } from "axios"
 import { log, LogLevel } from "./loggingInterop"
 import { userAuths } from "./officialServerAuth"
 import {
-    EPIC_NAMESPACE_2021,
-    FRANKENSTEIN_SNIPER_ENTITLEMENTS,
-    getEpicEntitlements,
+    H1_EPIC_ENTITLEMENTS,
+    H1_STEAM_ENTITLEMENTS,	
     H2_STEAM_ENTITLEMENTS,
-    STEAM_NAMESPACE_2016,
+    H3_EPIC_ENTITLEMENTS,
+    H3_STEAM_ENTITLEMENTS,
+    ALL_ENTITLEMENTS,
+    FRANKENSTEIN_SNIPER_ENTITLEMENTS,
 } from "./platformEntitlements"
 import { GameVersion } from "./types/types"
 import { getRemoteService } from "./utils"
@@ -47,12 +49,8 @@ abstract class EntitlementStrategy {
  * @internal
  */
 export class EpicH3Strategy extends EntitlementStrategy {
-    override async get(accessToken: string, userId: string) {
-        return await getEpicEntitlements(
-            EPIC_NAMESPACE_2021,
-            userId,
-            accessToken,
-        )
+    override get() {
+        return ALL_ENTITLEMENTS
     }
 }
 
@@ -62,52 +60,8 @@ export class EpicH3Strategy extends EntitlementStrategy {
  * @internal
  */
 export class IOIStrategy extends EntitlementStrategy {
-    private readonly _remoteService: string
-
-    constructor(
-        gameVersion: GameVersion,
-        private readonly issuerId: string,
-    ) {
-        super()
-        this.issuerId = issuerId
-        this._remoteService = getRemoteService(gameVersion)!
-    }
-
-    override async get(userId: string) {
-        if (!userAuths.has(userId)) {
-            log(LogLevel.ERROR, `No user data found for ${userId}.`)
-            return []
-        }
-
-        const user = userAuths.get(userId)
-
-        let resp: AxiosResponse<string[]> | undefined = undefined
-
-        try {
-            resp = await user?._useService<string[]>(
-                `https://${this._remoteService}.hitman.io/authentication/api/userchannel/ProfileService/GetPlatformEntitlements`,
-                false,
-                {
-                    issuerId: this.issuerId,
-                },
-            )
-        } catch (error) {
-            if (error instanceof AxiosError) {
-                log(
-                    LogLevel.ERROR,
-                    `Failed to get entitlements from Steam: got ${error.response?.status} ${error.response?.statusText}.`,
-                )
-            } else {
-                log(
-                    LogLevel.ERROR,
-                    `Failed to get entitlements from Steam: ${JSON.stringify(
-                        error,
-                    )}.`,
-                )
-            }
-        }
-
-        return resp?.data || []
+    override get() {
+        return ALL_ENTITLEMENTS
     }
 }
 
@@ -118,10 +72,7 @@ export class IOIStrategy extends EntitlementStrategy {
  */
 export class EpicH1Strategy extends EntitlementStrategy {
     override get() {
-        return [
-            "0a73eaedcac84bd28b567dbec764c5cb", // Hitman 1 standard edition
-            "81aecb49a60b47478e61e1cbd68d63c5", // Hitman 1 GOTY upgrade
-        ]
+        return ALL_ENTITLEMENTS
     }
 }
 
@@ -143,18 +94,7 @@ export class SteamScpcStrategy extends EntitlementStrategy {
  */
 export class SteamH1Strategy extends EntitlementStrategy {
     override get() {
-        return [
-            STEAM_NAMESPACE_2016,
-            "439870",
-            "439890",
-            "440930",
-            "440940",
-            "440960",
-            "440961",
-            "440962",
-            "505180",
-            "588780",
-        ]
+        return ALL_ENTITLEMENTS
     }
 }
 
@@ -165,6 +105,6 @@ export class SteamH1Strategy extends EntitlementStrategy {
  */
 export class SteamH2Strategy extends EntitlementStrategy {
     override get() {
-        return H2_STEAM_ENTITLEMENTS
+        return ALL_ENTITLEMENTS
     }
 }
