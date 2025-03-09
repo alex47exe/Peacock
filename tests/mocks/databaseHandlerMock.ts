@@ -100,9 +100,8 @@ export async function mockDatabaseFs(): Promise<MockedFsReturn> {
         },
     }
 
-    vi.spyOn(databaseHandler.asyncGuard, "getFs").mockImplementation(
-        () => fsImpl,
-    )
+    const getFsSpy = vi.spyOn(databaseHandler.asyncGuard, "getFs")
+    getFsSpy.mockImplementation(() => fsImpl)
 
     await databaseHandler.setupFileStructure((...strings) =>
         npath.toPortablePath(npath.join(...strings)),
@@ -113,6 +112,7 @@ export async function mockDatabaseFs(): Promise<MockedFsReturn> {
         discard() {
             memoryDrive.discardAndClose()
             databaseHandler.asyncGuard.unloadAll()
+            getFsSpy.mockReset()
         },
         spies: {
             writeFileSpy: vi.spyOn(fsImpl, "writeFile"),

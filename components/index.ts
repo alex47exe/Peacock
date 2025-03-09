@@ -113,7 +113,7 @@ function uncaught(error: Error): void {
     }
 
     log(LogLevel.ERROR, error.message)
-    error.stack && log(LogLevel.ERROR, error.stack)
+    if (error.stack) log(LogLevel.ERROR, error.stack)
 }
 
 process.on("uncaughtException", uncaught)
@@ -143,7 +143,6 @@ app.get("/", (_: Request, res) => {
     res.send(data)
 })
 
-serveStatic.mime.define({ "application/javascript": ["js"] })
 app.use("/assets", serveStatic("webui/dist/assets"))
 
 // make sure all responses have a default content-type set
