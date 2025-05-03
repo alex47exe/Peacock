@@ -122,6 +122,10 @@ process.on("uncaughtException", uncaught)
 
 const app = express()
 
+app.use(function badPathRewritingMiddleware(req, _, next) {
+    req.url = req.url.replaceAll("//", "/")
+    next()
+})
 app.use(loggingMiddleware)
 
 if (getFlag("developmentLogRequests")) {
@@ -550,6 +554,7 @@ export async function startServer(options: {
 
         const httpServer = http.createServer(app)
 
+        log(LogLevel.INFO, `Listening on ${host}:${port}...`)
         // @ts-expect-error Non-matching method sig
         httpServer.listen(port, host)
         log(LogLevel.INFO, "Server started.")
