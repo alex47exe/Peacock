@@ -1,6 +1,6 @@
 /*
  *     The Peacock Project - a HITMAN server replacement.
- *     Copyright (C) 2021-2024 The Peacock Project Team
+ *     Copyright (C) 2021-2025 The Peacock Project Team
  *
  *     This program is free software: you can redistribute it and/or modify
  *     it under the terms of the GNU Affero General Public License as published by
@@ -23,6 +23,7 @@ import {
     CONCRETEART_UNLOCKABLES,
     DELUXE_UNLOCKABLES,
     EXECUTIVE_UNLOCKABLES,
+    FRENCHMARTINI_UNLOCKABLES,
     H1_GOTY_UNLOCKABLES,
     H1_REQUIEM_UNLOCKABLES,
     H2_RACCOON_STINGRAY_UNLOCKABLES,
@@ -126,8 +127,10 @@ function filterUnlockedContent(
         let unlockableMasteryData: UnlockableMasteryData | undefined
 
         // Handles unlockables that belong to a package or unlocked gear from evergreen
-        if (packagedUnlocks.get(unlockable.Id)) {
-            acc[0].push(unlockable)
+        if (packagedUnlocks.has(unlockable.Id)) {
+            if (packagedUnlocks.get(unlockable.Id)) {
+                acc[0].push(unlockable)
+            }
         }
 
         // Handles packages
@@ -426,6 +429,13 @@ function filterAllowedContent(gameVersion: GameVersion, entP: string[]) {
             return (
                 e.includes("70a9afcc8de84b6ab0f2b45b2018559b") ||
                 e.includes("3254350")
+            )
+        }
+
+        if (FRENCHMARTINI_UNLOCKABLES.includes(id)) {
+            return (
+                e.includes("256eeeb3d8044aa1840e1606d268e0b2") ||
+                e.includes("3711140")
             )
         }
 

@@ -1,6 +1,6 @@
 /*
  *     The Peacock Project - a HITMAN server replacement.
- *     Copyright (C) 2021-2024 The Peacock Project Team
+ *     Copyright (C) 2021-2025 The Peacock Project Team
  *
  *     This program is free software: you can redistribute it and/or modify
  *     it under the terms of the GNU Affero General Public License as published by
@@ -631,20 +631,21 @@ export class Controller {
     }
 
     private getGroupContract(
-        json: MissionManifest,
+        contract: MissionManifest,
         gameVersion: GameVersion,
     ): MissionManifest {
-        if (escalationTypes.includes(json.Metadata.Type)) {
-            if (!json.Metadata.InGroup) {
-                return json
+        if (escalationTypes.includes(contract.Metadata.Type)) {
+            if (!contract.Metadata.InGroup) {
+                return contract
             }
 
             return (
-                this.resolveContract(json.Metadata.InGroup, gameVersion) ?? json
+                this.resolveContract(contract.Metadata.InGroup, gameVersion) ??
+                contract
             )
         }
 
-        return json
+        return contract
     }
 
     /**

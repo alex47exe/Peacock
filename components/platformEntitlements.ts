@@ -1,6 +1,6 @@
 /*
  *     The Peacock Project - a HITMAN server replacement.
- *     Copyright (C) 2021-2024 The Peacock Project Team
+ *     Copyright (C) 2021-2025 The Peacock Project Team
  *
  *     This program is free software: you can redistribute it and/or modify
  *     it under the terms of the GNU Affero General Public License as published by
@@ -118,6 +118,8 @@ export const H3_EPIC_ENTITLEMENTS = [
     "f04198e0ffcf49079b5ec77bb6b66891",
     // LAMBIC:
     "70a9afcc8de84b6ab0f2b45b2018559b",
+    // FRENCHMARTINI:
+    "256eeeb3d8044aa1840e1606d268e0b2",
 ]
 
 export const H3_STEAM_ENTITLEMENTS = [
