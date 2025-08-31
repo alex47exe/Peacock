@@ -333,7 +333,7 @@ export class Controller {
         >
         getContractManifest: SyncBailHook<
             [contractId: string, gameVersion: GameVersion, isGroup: boolean],
-            MissionManifest | undefined
+            MissionManifest | [MissionManifest, boolean] | undefined
         >
         fixContract: SyncHook<
             [contract: MissionManifest, gameVersion: GameVersion]
@@ -682,6 +682,33 @@ export class Controller {
                         (brick) =>
                             !brick.includes("override_constantjeff.brick"),
                     )
+
+                break
+            }
+            case "h3": {
+                if (!contract.Metadata.Entitlements) break
+
+                const locations =
+                    this.configManager.getConfig<PeacockLocationsData>(
+                        "LocationsData",
+                        false,
+                    )
+
+                // Entitlements changed in 3.230.1, thanks IOI
+                contract.Metadata.Entitlements =
+                    contract.Metadata.Entitlements.map((ent) => {
+                        const ents =
+                            locations.children[contract.Metadata.Location]
+                                ?.Properties.Entitlements
+
+                        if (ent.endsWith("LEGACY_STANDARD")) {
+                            // The entitlements 'H1_LEGACY_STANDARD' and 'H2_LEGACY_STANDARD' are no longer in the game as of v3.230.1
+                            // Either replace them with the corresponding new location entitlement or remove
+                            return ents?.[0]
+                        }
+
+                        return ent
+                    }).filter((ent) => ent !== undefined)
             }
         }
 
@@ -727,19 +754,33 @@ export class Controller {
             log(LogLevel.TRACE, `No game version.`, "Contracts")
         }
 
-        const optionalPluginJson = this.hooks.getContractManifest.call(
+        let optionalPluginJson = this.hooks.getContractManifest.call(
             id,
             gameVersion,
             getGroup,
         )
 
         if (optionalPluginJson) {
-            // We skip fixing plugins as we assume they know what they're doing.
-            return fastClone(
-                getGroup
-                    ? this.getGroupContract(optionalPluginJson, gameVersion)
-                    : optionalPluginJson,
-            )
+            // If a plugin returns [MissionManifest, true] instead of MissionManifest, do not fix the MissionManifest
+            if ((optionalPluginJson as [MissionManifest, boolean])[1]) {
+                optionalPluginJson = (
+                    optionalPluginJson as [MissionManifest, boolean]
+                )[0]
+            } else {
+                optionalPluginJson = this.fixContract(
+                    optionalPluginJson as MissionManifest,
+                    gameVersion,
+                )
+            }
+
+            if (getGroup) {
+                optionalPluginJson = this.getGroupContract(
+                    optionalPluginJson as MissionManifest,
+                    gameVersion,
+                )
+            }
+
+            return fastClone(optionalPluginJson as MissionManifest)
         }
 
         const registryJson: MissionManifest | undefined = internalContracts[id]
