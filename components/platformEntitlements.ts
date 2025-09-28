@@ -125,6 +125,8 @@ export const H3_EPIC_ENTITLEMENTS = [
 ]
 
 export const H3_STEAM_ENTITLEMENTS = [
+    "3957470", // HITMAN 3 - The Bruce Lee Pack
+    "3711140", // HITMAN 3 - The Banker Pack
     "3254350", // HITMAN 3 - The Splitter Pack
     "3110360", // HITMAN 3 - The Drop Pack
     "2973650", // HITMAN 3 - The Disruptor Pack
