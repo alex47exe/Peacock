@@ -22,6 +22,7 @@ import {
     brokenItems,
     CONCRETEART_UNLOCKABLES,
     BAIJU_UNLOCKABLES,
+    BELLINI_UNLOCKABLES,
     DELUXE_UNLOCKABLES,
     EXECUTIVE_UNLOCKABLES,
     FRENCHMARTINI_UNLOCKABLES,
@@ -53,6 +54,13 @@ import { UnlockableMasteryData } from "./types/mastery"
 import { attainableDefaults, defaultSuits, getDefaultSuitFor } from "./utils"
 import { log, LogLevel } from "./loggingInterop"
 
+export const ISOLATED_UNLOCKABLES_EXEMPT = [
+    "TOKEN_OUTFIT_HERO_BLACKSPECIAL_SUIT", // Black Streak Suit
+    "TOKEN_OUTFIT_HERO_MINININJA_SUIT", // Futo Suit
+    "TOKEN_OUTFIT_HERO_FREEDOMFIGHTERS_SUIT", // Freedom Phantom Suit
+    "TOKEN_OUTFIT_HERO_LYNCH_SUIT", // Lynch Suit
+]
+
 const DELUXE_DATA = [
     ...CONCRETEART_UNLOCKABLES,
     ...DELUXE_UNLOCKABLES,
@@ -75,6 +83,8 @@ const DELUXE_DATA = [
     ...TOMORROWLAND_UNLOCKABLES,
     ...LAMBIC_UNLOCKABLES,
     ...FRENCHMARTINI_UNLOCKABLES,
+    ...BAIJU_UNLOCKABLES,
+    ...BELLINI_UNLOCKABLES,
 ]
 
 /**
@@ -198,7 +208,10 @@ function filterUnlockedContent(
 
             if (isEvergreen || isDeluxe) {
                 acc[0].push(unlockable)
-            } else if (getFlag("enableIsolatedUnlockables")) {
+            } else if (
+                ISOLATED_UNLOCKABLES_EXEMPT.includes(unlockable.Id) ||
+                getFlag("enableIsolatedUnlockables")
+            ) {
                 /**
                  *  List of untracked items when they are enabled (to award to user until they are tracked to corresponding challenges)
                  */
@@ -445,6 +458,13 @@ function filterAllowedContent(gameVersion: GameVersion, entP: string[]) {
             return (
                 e.includes("04cb1b3e5b424308be25236f6bc1b2fb") ||
                 e.includes("3957470")
+            )
+        }
+
+        if (BELLINI_UNLOCKABLES.includes(id)) {
+            return (
+                e.includes("0047ddcd5e6846e881f1037c1416e3d9") ||
+                e.includes("4097630")
             )
         }
 
