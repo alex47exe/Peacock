@@ -12,14 +12,14 @@ jobs:
 
     steps:
       - name: Checkout Peacock
-        uses: actions/checkout@v5
+        uses: actions/checkout@v6.0.2
         with:
           persist-credentials: false
           token: ${{ secrets.PEACOCKBOT_TOKEN }}
           path: "./Peacock"
 
       - name: Checkout Peacock Strings
-        uses: actions/checkout@v5
+        uses: actions/checkout@v6.0.2
         with:
           token: ${{ secrets.PEACOCKBOT_TOKEN }}
           repository: thepeacockproject/peacock-strings
@@ -71,7 +71,7 @@ jobs:
           copy ./Peacock/resources/peacockstrings.locr.json ./PeacockStrings/content/chunk0/peacockstrings.locr.json
 
       - name: Push updated Peacock LOCR
-        uses: EndBug/add-and-commit@v9
+        uses: EndBug/add-and-commit@v10
         with:
           cwd: "./PeacockStrings"
           add: content/chunk0/peacockstrings.locr.json

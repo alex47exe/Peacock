@@ -850,5 +850,15 @@
         "17b6cdbb-fbe0-4623-a40f-ff19920d508b",
         "b067d1a3-78a2-48f6-af32-a1e6e5795156",
         "73d4bcd4-ec9f-4a6c-ae2d-1248109eadc3"
+    ],
+    "assembly:/_pro/scenes/missions/ancestral/scene_filur.entity": [
+        "f26550e7-bb18-4faf-90eb-2d70cdf2eda3",
+        "19aec70f-5499-480e-b333-63c3a63a1db7",
+        "b7ae3305-3950-462a-955c-410887eeb101",
+        "c6b00102-ea2f-45ec-91b3-493d633522f4",
+        "1f8b00e1-bb33-4e73-a078-687224a5cb3b",
+        "fa21bb4d-e803-4bd1-8d96-fb449a1e62db",
+        "1ab00f45-9c4f-4827-8151-3b835c0e74c5",
+        "f82ca3c6-83dd-4ad7-9aba-c2a7f69e8f23"
     ]
 }

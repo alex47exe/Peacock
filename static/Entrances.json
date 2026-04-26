@@ -773,5 +773,12 @@
     ],
     "assembly:/_pro/scenes/missions/hokkaido/scene_bellini.entity": [
         "6ad6d556-60dd-4d0b-8d8c-9c64f6265910"
+    ],
+    "assembly:/_pro/scenes/missions/ancestral/scene_filur.entity": [
+        "0aec817c-738e-4381-bbd4-a13b5d1c6730",
+        "5314c86b-7173-412b-a0b5-b0d9af2da722",
+        "d4ec0c94-02b2-4aae-be9e-cbb5cc7d7e4a",
+        "3812ea57-e29c-42cb-b93a-ea2d3e6a6806",
+        "64edfb0d-c620-44af-887d-8c1b5e65090b"
     ]
 }

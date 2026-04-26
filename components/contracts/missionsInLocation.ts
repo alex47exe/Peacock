@@ -551,6 +551,7 @@ export const missionsInLocation = {
                 "5bb29a6b-7384-4641-944c-3540fa5cd8aa",
             ],
             LOCATION_WET_RAT: [
+                "5d0668b9-665f-48a7-a72c-6f5614b350a2",
                 "07ffa72a-bbac-45ca-8c9f-b9c1b526153a",
                 "5121acde-313d-4517-ae70-6a54ca5d775a",
                 "494d97a6-9e31-45e0-9dae-f3793c731336",
@@ -609,6 +610,7 @@ export const missionsInLocation = {
                 "bfb56fe6-06db-440a-aafe-42eeeb223fa1",
                 "80cf04de-8e0b-4f38-b094-600753e2ac24",
                 "85a67f31-75ce-40f5-a281-7765791f58ca",
+                "34c21c64-515a-4a43-9fd0-378211060122",
             ],
             LOCATION_EDGY_FOX: [
                 "d21e2e91-602c-49d2-9d42-e8bcfb810e9a",

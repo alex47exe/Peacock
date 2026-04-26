@@ -165,14 +165,14 @@
             "Name": "celebrity",
             "Items": [
                 {
-                    "ImageUrl": "images/store/addon_et_bellini.jpg",
+                    "ImageUrl": "images/store/addon_et_filur.jpg",
                     "Price": null,
                     "Currency": null,
-                    "Description": "GAME_STORE_METADATA_S3_DLC_ET_BELLINI_DESCRIPTION",
-                    "Name": "GAME_STORE_METADATA_S3_DLC_ET_BELLINI_TITLE_SHORT",
-                    "ShopId": "https://store.epicgames.com/p/hitman-3--the-eminem-vs-slim-shady-pack",
+                    "Description": "GAME_STORE_METADATA_S3_DLC_ET_FILUR_DESCRIPTION",
+                    "Name": "GAME_STORE_METADATA_S3_DLC_ET_FILUR_TITLE_SHORT",
+                    "ShopId": "https://store.epicgames.com/p/hitman-3--patient-zero-requiem-pack",
                     "Categories": ["celebrity"],
-                    "PackageName": "h3ElusiveBellini",
+                    "PackageName": "h3ElusiveFilur",
                     "UserWhitelist": null,
                     "UserBlacklist": null,
                     "Properties": {
@@ -333,7 +333,7 @@
                     "UserBlacklist": null,
                     "Properties": {
                         "SmallTile": false,
-                        "LocalizedHeader": "Store / Pre-order Now",
+                        "Header": "UI_MENU_PAGE_HUB_ON_PREORDER_NOW",
                         "LocalizedName": "007 First Light",
                         "SteamOpenUrl": "https://store.steampowered.com/app/3768760",
                         "PS5ServiceLabel": 3,

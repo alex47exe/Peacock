@@ -237,6 +237,8 @@ export function scenePathToRpAsset(
             return ["harebell", "The Sloth Depletion", "Dartmoor"]
         case "assembly:/_pro/scenes/missions/ancestral/scene_hollyhock.entity":
             return ["hollyhock", "The Wrath Termination", "Dartmoor"]
+        case "assembly:/_pro/scenes/missions/ancestral/scene_filur.entity":
+            return ["elusivefilur", "The Harbinger", "Dartmoor"]
 
         // columbia
         case "assembly:/_pro/scenes/missions/colombia/mission_millipede/scene_millipede.entity":

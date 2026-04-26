@@ -124,6 +124,8 @@ export const H3_EPIC_ENTITLEMENTS = [
     "04cb1b3e5b424308be25236f6bc1b2fb",
     // BELLINI:
     "0047ddcd5e6846e881f1037c1416e3d9",
+    // FILUR:
+    "b135c766d25948c39d7dd316dbc4db53",
 ]
 
 export const H3_STEAM_ENTITLEMENTS = [

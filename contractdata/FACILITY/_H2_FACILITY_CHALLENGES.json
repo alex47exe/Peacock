@@ -109,6 +109,104 @@
                     }
                 },
                 {
+                    "Id": "57e399bc-e449-4805-bbae-f7cd257925fe",
+                    "Name": "UI_CHALLENGES_PROLOGUE_LIFERAFT_KILL_NAME",
+                    "ImageName": "images/challenges/lat73/prologue_c_liferaft_kill.jpg",
+                    "Description": "UI_CHALLENGES_PROLOGUE_LIFERAFT_KILL_DESC",
+                    "Rewards": {
+                        "MasteryXP": 2000
+                    },
+                    "Drops": [],
+                    "IsPlayable": true,
+                    "IsLocked": false,
+                    "HideProgression": true,
+                    "CategoryName": "UI_MENU_PAGE_PROFILE_CHALLENGES_CATEGORY_SIGNATUREKILL",
+                    "Icon": "challenge_category_assassination",
+                    "LocationId": "LOCATION_PARENT_ICA_FACILITY",
+                    "ParentLocationId": "LOCATION_PARENT_ICA_FACILITY",
+                    "Type": "contract",
+                    "DifficultyLevels": [],
+                    "XpModifier": {},
+                    "RuntimeType": "Hit",
+                    "Definition": {
+                        "Context": {},
+                        "Scope": "session",
+                        "States": {
+                            "Start": {
+                                "Kill": {
+                                    "Condition": {
+                                        "$and": [
+                                            {
+                                                "$eq": ["$Value.IsTarget", true]
+                                            },
+                                            {
+                                                "$eq": [
+                                                    "$Value.SetPieceType",
+                                                    "99743df5-fef0-4c20-a1b6-deb34f094a44"
+                                                ]
+                                            }
+                                        ]
+                                    },
+                                    "Transition": "Success"
+                                }
+                            }
+                        }
+                    },
+                    "Tags": ["clean", "medium", "assassination"],
+                    "InclusionData": {
+                        "ContractIds": ["b573932d-7a34-44f1-bcf4-ea8f79f75710"]
+                    }
+                },
+                {
+                    "Id": "df10cfd0-545e-40db-afca-cf5c178870a5",
+                    "Name": "UI_CHALLENGES_PROLOGUE_TARGET_EXPLOSION_NAME",
+                    "ImageName": "images/challenges/lat73/prologue_c_target_explosion.jpg",
+                    "Description": "UI_CHALLENGES_PROLOGUE_TARGET_EXPLOSION_DESC",
+                    "Rewards": {
+                        "MasteryXP": 1000
+                    },
+                    "Drops": [],
+                    "IsPlayable": true,
+                    "IsLocked": false,
+                    "HideProgression": true,
+                    "CategoryName": "UI_MENU_PAGE_PROFILE_CHALLENGES_CATEGORY_SIGNATUREKILL",
+                    "Icon": "challenge_category_assassination",
+                    "LocationId": "LOCATION_PARENT_ICA_FACILITY",
+                    "ParentLocationId": "LOCATION_PARENT_ICA_FACILITY",
+                    "Type": "contract",
+                    "DifficultyLevels": [],
+                    "XpModifier": {},
+                    "RuntimeType": "Hit",
+                    "Definition": {
+                        "Context": {},
+                        "Scope": "session",
+                        "States": {
+                            "Start": {
+                                "Kill": {
+                                    "Condition": {
+                                        "$and": [
+                                            {
+                                                "$eq": ["$Value.IsTarget", true]
+                                            },
+                                            {
+                                                "$eq": [
+                                                    "$Value.KillItemRepositoryId",
+                                                    "7d0c107e-4279-4fda-a7e2-77359271cb9a"
+                                                ]
+                                            }
+                                        ]
+                                    },
+                                    "Transition": "Success"
+                                }
+                            }
+                        }
+                    },
+                    "Tags": ["clean", "easy", "assassination"],
+                    "InclusionData": {
+                        "ContractIds": ["b573932d-7a34-44f1-bcf4-ea8f79f75710"]
+                    }
+                },
+                {
                     "Id": "228996e6-5fff-4f76-95de-484ee941c0ab",
                     "Name": "UI_CHALLENGES_GRADUATION_DEATH_BYPROXY_NAME",
                     "ImageName": "images/challenges/lat73/graduation_c_death_byproxy.jpg",
@@ -1149,55 +1247,6 @@
                     }
                 },
                 {
-                    "Id": "57e399bc-e449-4805-bbae-f7cd257925fe",
-                    "Name": "UI_CHALLENGES_PROLOGUE_LIFERAFT_KILL_NAME",
-                    "ImageName": "images/challenges/lat73/prologue_c_liferaft_kill.jpg",
-                    "Description": "UI_CHALLENGES_PROLOGUE_LIFERAFT_KILL_DESC",
-                    "Rewards": {
-                        "MasteryXP": 2000
-                    },
-                    "Drops": [],
-                    "IsPlayable": true,
-                    "IsLocked": false,
-                    "HideProgression": true,
-                    "CategoryName": "UI_MENU_PAGE_PROFILE_CHALLENGES_CATEGORY_COMMUNITY",
-                    "Icon": "challenge_category_feats",
-                    "LocationId": "LOCATION_PARENT_ICA_FACILITY",
-                    "ParentLocationId": "LOCATION_PARENT_ICA_FACILITY",
-                    "Type": "contract",
-                    "DifficultyLevels": [],
-                    "XpModifier": {},
-                    "RuntimeType": "Hit",
-                    "Definition": {
-                        "Context": {},
-                        "Scope": "session",
-                        "States": {
-                            "Start": {
-                                "Kill": {
-                                    "Condition": {
-                                        "$and": [
-                                            {
-                                                "$eq": ["$Value.IsTarget", true]
-                                            },
-                                            {
-                                                "$eq": [
-                                                    "$Value.SetPieceType",
-                                                    "99743df5-fef0-4c20-a1b6-deb34f094a44"
-                                                ]
-                                            }
-                                        ]
-                                    },
-                                    "Transition": "Success"
-                                }
-                            }
-                        }
-                    },
-                    "Tags": ["clean", "medium", "feats"],
-                    "InclusionData": {
-                        "ContractIds": ["b573932d-7a34-44f1-bcf4-ea8f79f75710"]
-                    }
-                },
-                {
                     "Id": "5c312f4a-5895-42ab-bce7-cd6c166113b1",
                     "Name": "UI_CHALLENGES_PROLOGUE_ITEM_FOUND_NAME",
                     "ImageName": "images/challenges/lat73/prologue_c_item_found.jpg",
@@ -1468,55 +1517,6 @@
                         }
                     },
                     "Tags": ["story", "easy", "feats"],
-                    "InclusionData": {
-                        "ContractIds": ["b573932d-7a34-44f1-bcf4-ea8f79f75710"]
-                    }
-                },
-                {
-                    "Id": "df10cfd0-545e-40db-afca-cf5c178870a5",
-                    "Name": "UI_CHALLENGES_PROLOGUE_TARGET_EXPLOSION_NAME",
-                    "ImageName": "images/challenges/lat73/prologue_c_target_explosion.jpg",
-                    "Description": "UI_CHALLENGES_PROLOGUE_TARGET_EXPLOSION_DESC",
-                    "Rewards": {
-                        "MasteryXP": 1000
-                    },
-                    "Drops": [],
-                    "IsPlayable": true,
-                    "IsLocked": false,
-                    "HideProgression": true,
-                    "CategoryName": "UI_MENU_PAGE_PROFILE_CHALLENGES_CATEGORY_COMMUNITY",
-                    "Icon": "challenge_category_feats",
-                    "LocationId": "LOCATION_PARENT_ICA_FACILITY",
-                    "ParentLocationId": "LOCATION_PARENT_ICA_FACILITY",
-                    "Type": "contract",
-                    "DifficultyLevels": [],
-                    "XpModifier": {},
-                    "RuntimeType": "Hit",
-                    "Definition": {
-                        "Context": {},
-                        "Scope": "session",
-                        "States": {
-                            "Start": {
-                                "Kill": {
-                                    "Condition": {
-                                        "$and": [
-                                            {
-                                                "$eq": ["$Value.IsTarget", true]
-                                            },
-                                            {
-                                                "$eq": [
-                                                    "$Value.KillItemRepositoryId",
-                                                    "7d0c107e-4279-4fda-a7e2-77359271cb9a"
-                                                ]
-                                            }
-                                        ]
-                                    },
-                                    "Transition": "Success"
-                                }
-                            }
-                        }
-                    },
-                    "Tags": ["clean", "easy", "feats"],
                     "InclusionData": {
                         "ContractIds": ["b573932d-7a34-44f1-bcf4-ea8f79f75710"]
                     }

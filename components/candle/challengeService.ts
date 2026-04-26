@@ -68,7 +68,6 @@ import { getVersionedConfig } from "../configSwizzleManager"
 import { SyncHook } from "../hooksImpl"
 import { getUserEscalationProgress } from "../contracts/escalations/escalationService"
 
-import { getUnlockableById } from "../inventory"
 import { enqueueEvent } from "../eventHandler"
 import { randomUUID } from "crypto"
 
@@ -225,16 +224,6 @@ export abstract class ChallengeRegistry {
             },
         ],
         [
-            "cheesecake-pack",
-            {
-                Name: "UI_MENU_PAGE_PROFILE_CHALLENGES_CATEGORY_PACK_CHEESECAKE",
-                Description: "",
-                GameVersions: ["h3"],
-                Image: "images/challenges/categories/packcheesecake/tile.jpg",
-                Icon: "challenge_category_feats",
-            },
-        ],
-        [
             "argentum-pack",
             {
                 Name: "UI_MENU_PAGE_PROFILE_CHALLENGES_CATEGORY_PACK_ARGENTUM",
@@ -251,6 +240,16 @@ export abstract class ChallengeRegistry {
                 Description: "",
                 GameVersions: ["h3"],
                 Image: "images/challenges/categories/packargon/tile.jpg",
+                Icon: "challenge_category_feats",
+            },
+        ],
+        [
+            "cheesecake-pack",
+            {
+                Name: "UI_MENU_PAGE_PROFILE_CHALLENGES_CATEGORY_PACK_CHEESECAKE",
+                Description: "",
+                GameVersions: ["h3"],
+                Image: "images/challenges/categories/packcheesecake/tile.jpg",
                 Icon: "challenge_category_feats",
             },
         ],
@@ -1574,7 +1573,7 @@ export class ChallengeService extends ChallengeRegistry {
         isDestination = false,
     ): CompiledChallengeTreeData {
         const drops = challenge.Drops.map((e) =>
-            getUnlockableById(e, gameVersion),
+            this.controller.inventoryService.getUnlockableById(e, gameVersion),
         ).filter(Boolean) as Unlockable[]
 
         if (drops.length !== challenge.Drops.length) {

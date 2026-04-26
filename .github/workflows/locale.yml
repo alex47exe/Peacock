@@ -13,7 +13,7 @@ jobs:
 
     steps:
       - name: Checkout Peacock
-        uses: actions/checkout@v5
+        uses: actions/checkout@v6.0.2
         with:
           token: ${{ secrets.PEACOCKBOT_TOKEN }}
           path: "./Peacock"
@@ -60,7 +60,7 @@ jobs:
           yarn rebuild-locale
 
       - name: Push updated RPKG files
-        uses: EndBug/add-and-commit@v9
+        uses: EndBug/add-and-commit@v10
         with:
           cwd: "./Peacock"
           add: |

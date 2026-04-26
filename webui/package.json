@@ -5,7 +5,7 @@
     "type": "module",
     "dependencies": {
         "@radix-ui/react-alert-dialog": "^1.0.5",
-        "axios": "^1.8.2",
+        "axios": "^1.15.0",
         "clsx": "^2.1.1",
         "immer": "^10.1.1",
         "infima": "0.2.0-alpha.38",
@@ -27,7 +27,7 @@
         "@types/react-dom": "^18.3.0",
         "rollup-plugin-license": "^3.4.0",
         "typescript": "5.8.2",
-        "vite": "^6.2.1"
+        "vite": "^8.0.1"
     },
     "peerDependencies": {
         "rollup": "*"

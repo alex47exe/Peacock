@@ -1,6 +1,6 @@
 # The Peacock Project
 
-[![Discord](https://img.shields.io/discord/826809653181808651?label=Discord&logo=discord&logoColor=white&style=for-the-badge)](https://discord.gg/peacock)
+[![Discord](https://img.shields.io/discord/826809653181808651?label=Discord&logo=discord&logoColor=white&style=for-the-badge)](https://discord.gg/F8qQTfnajw)
 
 The Peacock Project is a HITMAN World of Assassination Trilogy server
 replacement.

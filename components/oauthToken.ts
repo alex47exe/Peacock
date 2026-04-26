@@ -34,7 +34,7 @@ import {
 } from "./databaseHandler"
 import { OfficialServerAuth, userAuths } from "./officialServerAuth"
 import { randomUUID, randomBytes } from "crypto"
-import { clearInventoryFor } from "./inventory"
+import { controller } from "./controller"
 import {
     EpicH1Strategy,
     EpicH3Strategy,
@@ -337,7 +337,7 @@ export async function handleOAuthToken(
         cntry: req.body.locale,
     }
 
-    clearInventoryFor(req.body.pId)
+    controller.inventoryService.clearInventoryFor(req.body.pId)
 
     return {
         access_token: sign(userinfo, JWT_SECRET, signOptions),
