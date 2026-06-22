@@ -258,6 +258,7 @@ export const missionsInLocation = {
             ],
             LOCATION_BANGKOK_ZIKA: [],
             LOCATION_COLORADO: [
+                "a35a7469-e74c-d1b1-a377-6b0016add67d",
                 "e6f4d3a4-9a33-4bd9-b761-da297069cf8c",
                 "c5d88e8c-437b-476b-afe2-d94aa4293502",
                 "4186dd23-1cfc-4ba0-9863-9f19f7cba249",
@@ -294,6 +295,7 @@ export const missionsInLocation = {
                 "d336d894-024a-4cd4-9867-dee7de70ee79",
             ],
             LOCATION_MUMBAI: [
+                "b4c961a0-42da-b4cc-b92a-763977de914c",
                 "667f48a3-7f6b-486e-8f6b-2f782a5c4857",
                 "9badee3e-0014-46b1-9ef6-edf8858ba038",
                 "b6a6330a-301a-4e8e-a26f-0f3e0ea809b5",
@@ -454,6 +456,7 @@ export const missionsInLocation = {
             ],
             LOCATION_BANGKOK_ZIKA: [],
             LOCATION_COLORADO: [
+                "a35a7469-e74c-d1b1-a377-6b0016add67d",
                 "e6f4d3a4-9a33-4bd9-b761-da297069cf8c",
                 "c5d88e8c-437b-476b-afe2-d94aa4293502",
                 "4186dd23-1cfc-4ba0-9863-9f19f7cba249",
@@ -491,6 +494,7 @@ export const missionsInLocation = {
                 "d336d894-024a-4cd4-9867-dee7de70ee79",
             ],
             LOCATION_MUMBAI: [
+                "b4c961a0-42da-b4cc-b92a-763977de914c",
                 "667f48a3-7f6b-486e-8f6b-2f782a5c4857",
                 "9badee3e-0014-46b1-9ef6-edf8858ba038",
                 "b6a6330a-301a-4e8e-a26f-0f3e0ea809b5",
