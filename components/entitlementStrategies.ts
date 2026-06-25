@@ -354,52 +354,6 @@ export class SteamStrategy extends EntitlementStrategy {
 export class IOIStrategy extends EntitlementStrategy {
     override get() {
         return ALL_ENTITLEMENTS
-    /*
-    private readonly _remoteService: string
-    private readonly _issuerId: string
-
-    constructor(gameVersion: GameVersion, issuerId: string) {
-        super()
-        this._issuerId = issuerId
-        this._remoteService = getRemoteService(gameVersion)!
-    }
-
-    override async get(userId: string) {
-        if (!userAuths.has(userId)) {
-            log(LogLevel.ERROR, `No user data found for ${userId}.`)
-            return []
-        }
-
-        const user = userAuths.get(userId)
-
-        let resp: AxiosResponse<string[]> | undefined = undefined
-
-        try {
-            resp = await user?._useService<string[]>(
-                `https://${this._remoteService}.hitman.io/authentication/api/userchannel/ProfileService/GetPlatformEntitlements`,
-                false,
-                {
-                    issuerId: this._issuerId,
-                },
-            )
-        } catch (error) {
-            if (error instanceof AxiosError) {
-                log(
-                    LogLevel.ERROR,
-                    `Failed to get entitlements from Steam: got ${error.response?.status} ${error.response?.statusText}.`,
-                )
-            } else {
-                log(
-                    LogLevel.ERROR,
-                    `Failed to get entitlements from Steam: ${JSON.stringify(
-                        error,
-                    )}.`,
-                )
-            }
-        }
-
-        return resp?.data || []
-    */
     }
 }
 
