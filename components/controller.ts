@@ -85,6 +85,18 @@ import { createDelegatingProxy } from "./delegation"
  */
 export const featuredContractGroups: string[][] = [
     [
+        "73c4baaf-81a0-435c-9893-e54836ba0000",
+        "65cd1b41-56ed-4107-a65a-cbcbbc5e33a0",
+        "7406ace8-08e5-4323-ac10-8a5e5bbb3ee7",
+        "ea9d11d2-aa15-4a05-ad1d-5480973ea000",
+        "7e3f8426-7037-42ae-8a01-462734c8ec07",
+        "6502d8be-e6f2-4eea-aee5-38cc13ec5a89",
+        "a1b83a6e-86ad-4561-b83c-dc890d71c87c",
+        "1afcd317-d15d-49ce-9541-105e30a0118f",
+        "727031d7-bc21-416d-aafb-27dea7a627e6",
+        "d6e1e6d7-1d30-4007-883a-efb527fd5451",
+    ],
+    [
         "6275f476-b90a-4f79-abf3-bf30af020ad8",
         "ee0411d6-b3e7-4320-b56b-25c45d8a9d61",
         "a03285bd-7342-4262-b118-df485b5e99a9",
