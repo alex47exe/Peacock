@@ -271,8 +271,8 @@
         "UI_PEACOCK_CHALLENGEPACK_CHEESECAKE_DUBAIPANPACIFY_DESC": "<li>Rearrange the meeting and lockdown the meeting room in Dubai.</li><li>Pacify Carl Ingram and Marcus Stuyvesant with a Frying Pan.</li><li>Complete the mission.</li>",
         "UI_PEACOCK_GAMECHANGERS_GLOBAL_HEADKILLONLY_NAME": "Head Attack Only",
         "UI_PEACOCK_GAMECHANGERS_GLOBAL_HEADKILLONLY_DESC": "All targets must be eliminated by using headshots or throwing lethal melee weapons.",
-        "UI_MENU_PAGE_STORY_CUTSCENE_SEASON2_STORY_BLOCK_09_TITLE": "All According to Plan",
-        "UI_MENU_PAGE_STORY_CUTSCENE_SEASON2_STORY_BLOCK_10_TITLE": "A Trip to Paradise",
+        "UI_MENU_PAGE_STORY_CUTSCENE_SEASON2_STORY_BLOCK_09_TITLE": "A Trip to Paradise",
+        "UI_MENU_PAGE_STORY_CUTSCENE_SEASON2_STORY_BLOCK_10_TITLE": "All According to Plan",
         "UI_PEACOCK_CASPER": "The Aberratious Stravaig",
         "UI_PEACOCK_CASPER1": "The Aberratious Stravaig - Level 1",
         "UI_PEACOCK_CASPER2": "The Aberratious Stravaig - Level 2",
@@ -331,7 +331,8 @@
         "UI_PEACOCK_ARES3": "The Barclay Burst - Level 3",
         "UI_PEACOCK_ARES_OBJ1": "Eliminate Andre Washington with explosion caused by Explosive Watch Battery",
         "UI_PEACOCK_ARES_OBJ2": "Eliminate Albert Knarr with explosion caused by Propane Flask",
-        "UI_PEACOCK_ARES_OBJ3": "Eliminate Clinton Webster with explosion caused by Nitroglycerin"
+        "UI_PEACOCK_ARES_OBJ3": "Eliminate Clinton Webster with explosion caused by Nitroglycerin",
+        "UI_SEASON_CHALLENGEPACKS": "Challenge Packs"
     },
     "french": {
         "UI_PEACOCK_STRINGS_PRESENT": "yes",
@@ -606,8 +607,8 @@
         "UI_PEACOCK_CHALLENGEPACK_CHEESECAKE_DUBAIPANPACIFY_DESC": "<li>Replanifiez le rendez-vous et activez le verrouillage du salon à Dubaï.</li><li>Neutralisez Carl Ingram et Marcus Stuyvesant avec une poêle.</li><li>Terminez la mission.</li>",
         "UI_PEACOCK_GAMECHANGERS_GLOBAL_HEADKILLONLY_NAME": "Attaque à la tête uniquement",
         "UI_PEACOCK_GAMECHANGERS_GLOBAL_HEADKILLONLY_DESC": "Toutes les cibles doivent être éliminées avec des tirs à la tête ou des lancers d'objets de corps à corps mortels.",
-        "UI_MENU_PAGE_STORY_CUTSCENE_SEASON2_STORY_BLOCK_09_TITLE": "Tout comme prévu",
-        "UI_MENU_PAGE_STORY_CUTSCENE_SEASON2_STORY_BLOCK_10_TITLE": "Un voyage au paradis",
+        "UI_MENU_PAGE_STORY_CUTSCENE_SEASON2_STORY_BLOCK_09_TITLE": "Un voyage au paradis",
+        "UI_MENU_PAGE_STORY_CUTSCENE_SEASON2_STORY_BLOCK_10_TITLE": "Tout comme prévu",
         "UI_PEACOCK_CASPER": "Le Stravaig aberrant",
         "UI_PEACOCK_CASPER1": "Le Stravaig aberrant - Niveau 1",
         "UI_PEACOCK_CASPER2": "Le Stravaig aberrant - Niveau 2",
@@ -666,7 +667,8 @@
         "UI_PEACOCK_ARES3": "L'éclatement de Barclay - Niveau 3",
         "UI_PEACOCK_ARES_OBJ1": "Éliminez Andre Washington avec une explosion causée par une pile de montre explosive",
         "UI_PEACOCK_ARES_OBJ2": "Éliminez Albert Knarr avec une explosion causée par une bouteille de propane",
-        "UI_PEACOCK_ARES_OBJ3": "Éliminez Clinton Webster avec une explosion causée par de la nitroglycérine"
+        "UI_PEACOCK_ARES_OBJ3": "Éliminez Clinton Webster avec une explosion causée par de la nitroglycérine",
+        "UI_SEASON_CHALLENGEPACKS": "Packs de défis"
     },
     "italian": {
         "UI_PEACOCK_STRINGS_PRESENT": "yes",
@@ -940,8 +942,8 @@
         "UI_PEACOCK_CHALLENGEPACK_CHEESECAKE_DUBAIPANPACIFY_DESC": "<li>Rearrange the meeting and lockdown the meeting room in Dubai.</li><li>Pacify Carl Ingram and Marcus Stuyvesant with a Frying Pan.</li><li>Complete the mission.</li>",
         "UI_PEACOCK_GAMECHANGERS_GLOBAL_HEADKILLONLY_NAME": "Head Attack Only",
         "UI_PEACOCK_GAMECHANGERS_GLOBAL_HEADKILLONLY_DESC": "All targets must be eliminated by using headshots or throwing lethal melee weapons.",
-        "UI_MENU_PAGE_STORY_CUTSCENE_SEASON2_STORY_BLOCK_09_TITLE": "All According to Plan",
-        "UI_MENU_PAGE_STORY_CUTSCENE_SEASON2_STORY_BLOCK_10_TITLE": "A Trip to Paradise",
+        "UI_MENU_PAGE_STORY_CUTSCENE_SEASON2_STORY_BLOCK_09_TITLE": "A Trip to Paradise",
+        "UI_MENU_PAGE_STORY_CUTSCENE_SEASON2_STORY_BLOCK_10_TITLE": "All According to Plan",
         "UI_PEACOCK_CASPER": "The Aberratious Stravaig",
         "UI_PEACOCK_CASPER1": "The Aberratious Stravaig - Level 1",
         "UI_PEACOCK_CASPER2": "The Aberratious Stravaig - Level 2",
@@ -1000,7 +1002,8 @@
         "UI_PEACOCK_ARES3": "The Barclay Burst - Level 3",
         "UI_PEACOCK_ARES_OBJ1": "Eliminate Andre Washington with explosion caused by Explosive Watch Battery",
         "UI_PEACOCK_ARES_OBJ2": "Eliminate Albert Knarr with explosion caused by Propane Flask",
-        "UI_PEACOCK_ARES_OBJ3": "Eliminate Clinton Webster with explosion caused by Nitroglycerin"
+        "UI_PEACOCK_ARES_OBJ3": "Eliminate Clinton Webster with explosion caused by Nitroglycerin",
+        "UI_SEASON_CHALLENGEPACKS": "Pacchetti sfide"
     },
     "german": {
         "UI_PEACOCK_STRINGS_PRESENT": "yes",
@@ -1280,8 +1283,8 @@
         "UI_PEACOCK_CHALLENGEPACK_CHEESECAKE_DUBAIPANPACIFY_DESC": "<li>Re-Arrangiere das Meeting und verriegele den Besprechungsraum in Dubai.</li><li>Stelle Carl Ingram und Marcus Stuyvesant mit einer Bratpfanne ruhig.</li><li>Beende die Mission.</li>",
         "UI_PEACOCK_GAMECHANGERS_GLOBAL_HEADKILLONLY_NAME": "Nur Angriffe auf den Kopf",
         "UI_PEACOCK_GAMECHANGERS_GLOBAL_HEADKILLONLY_DESC": "Alle Ziele müssen durch Kopfschüsse oder mit tödlichen Wurfwaffen gezielt auf den Kopf sterben.",
-        "UI_MENU_PAGE_STORY_CUTSCENE_SEASON2_STORY_BLOCK_09_TITLE": "Alles nach Plan",
-        "UI_MENU_PAGE_STORY_CUTSCENE_SEASON2_STORY_BLOCK_10_TITLE": "Ein Trip ins Paradies",
+        "UI_MENU_PAGE_STORY_CUTSCENE_SEASON2_STORY_BLOCK_09_TITLE": "Ein Trip ins Paradies",
+        "UI_MENU_PAGE_STORY_CUTSCENE_SEASON2_STORY_BLOCK_10_TITLE": "Alles nach Plan",
         "UI_PEACOCK_CASPER": "Das Verwirrte Verlaufen",
         "UI_PEACOCK_CASPER1": "Das Verwirrte Verlaufen - Stufe 1",
         "UI_PEACOCK_CASPER2": "Das Verwirrte Verlaufen - Stufe 2",
@@ -1340,7 +1343,8 @@
         "UI_PEACOCK_ARES3": "The Barclay Burst - Level 3",
         "UI_PEACOCK_ARES_OBJ1": "Eliminate Andre Washington with explosion caused by Explosive Watch Battery",
         "UI_PEACOCK_ARES_OBJ2": "Eliminate Albert Knarr with explosion caused by Propane Flask",
-        "UI_PEACOCK_ARES_OBJ3": "Eliminate Clinton Webster with explosion caused by Nitroglycerin"
+        "UI_PEACOCK_ARES_OBJ3": "Eliminate Clinton Webster with explosion caused by Nitroglycerin",
+        "UI_SEASON_CHALLENGEPACKS": "Herausforderungspakete"
     },
     "spanish": {
         "UI_PEACOCK_STRINGS_PRESENT": "yes",
@@ -1615,8 +1619,8 @@
         "UI_PEACOCK_CHALLENGEPACK_CHEESECAKE_DUBAIPANPACIFY_DESC": "<li>Rearrange the meeting and lockdown the meeting room in Dubai.</li><li>Pacify Carl Ingram and Marcus Stuyvesant with a Frying Pan.</li><li>Complete the mission.</li>",
         "UI_PEACOCK_GAMECHANGERS_GLOBAL_HEADKILLONLY_NAME": "Head Attack Only",
         "UI_PEACOCK_GAMECHANGERS_GLOBAL_HEADKILLONLY_DESC": "All targets must be eliminated by using headshots or throwing lethal melee weapons.",
-        "UI_MENU_PAGE_STORY_CUTSCENE_SEASON2_STORY_BLOCK_09_TITLE": "All According to Plan",
-        "UI_MENU_PAGE_STORY_CUTSCENE_SEASON2_STORY_BLOCK_10_TITLE": "A Trip to Paradise",
+        "UI_MENU_PAGE_STORY_CUTSCENE_SEASON2_STORY_BLOCK_09_TITLE": "A Trip to Paradise",
+        "UI_MENU_PAGE_STORY_CUTSCENE_SEASON2_STORY_BLOCK_10_TITLE": "All According to Plan",
         "UI_PEACOCK_CASPER": "The Aberratious Stravaig",
         "UI_PEACOCK_CASPER1": "The Aberratious Stravaig - Level 1",
         "UI_PEACOCK_CASPER2": "The Aberratious Stravaig - Level 2",
@@ -1675,7 +1679,8 @@
         "UI_PEACOCK_ARES3": "The Barclay Burst - Level 3",
         "UI_PEACOCK_ARES_OBJ1": "Eliminate Andre Washington with explosion caused by Explosive Watch Battery",
         "UI_PEACOCK_ARES_OBJ2": "Eliminate Albert Knarr with explosion caused by Propane Flask",
-        "UI_PEACOCK_ARES_OBJ3": "Eliminate Clinton Webster with explosion caused by Nitroglycerin"
+        "UI_PEACOCK_ARES_OBJ3": "Eliminate Clinton Webster with explosion caused by Nitroglycerin",
+        "UI_SEASON_CHALLENGEPACKS": "Paquetes de desafíos"
     },
     "russian": {
         "UI_PEACOCK_STRINGS_PRESENT": "yes",
@@ -1949,8 +1954,8 @@
         "UI_PEACOCK_CHALLENGEPACK_CHEESECAKE_DUBAIPANPACIFY_DESC": "<li>Перенести встречу и вызвать тревогу в комнате для встреч, в Дубаях.</li><li>Нейтрализовать Карла Инграма и Маркуса Стейвесанта с помощью Сковороды.</li><li>Выполнить задание.</li>",
         "UI_PEACOCK_GAMECHANGERS_GLOBAL_HEADKILLONLY_NAME": "Head Attack Only",
         "UI_PEACOCK_GAMECHANGERS_GLOBAL_HEADKILLONLY_DESC": "All targets must be eliminated by using headshots or throwing lethal melee weapons.",
-        "UI_MENU_PAGE_STORY_CUTSCENE_SEASON2_STORY_BLOCK_09_TITLE": "All According to Plan",
-        "UI_MENU_PAGE_STORY_CUTSCENE_SEASON2_STORY_BLOCK_10_TITLE": "A Trip to Paradise",
+        "UI_MENU_PAGE_STORY_CUTSCENE_SEASON2_STORY_BLOCK_09_TITLE": "A Trip to Paradise",
+        "UI_MENU_PAGE_STORY_CUTSCENE_SEASON2_STORY_BLOCK_10_TITLE": "All According to Plan",
         "UI_PEACOCK_CASPER": "The Aberratious Stravaig",
         "UI_PEACOCK_CASPER1": "The Aberratious Stravaig - Level 1",
         "UI_PEACOCK_CASPER2": "The Aberratious Stravaig - Level 2",
@@ -2009,7 +2014,8 @@
         "UI_PEACOCK_ARES3": "The Barclay Burst - Level 3",
         "UI_PEACOCK_ARES_OBJ1": "Eliminate Andre Washington with explosion caused by Explosive Watch Battery",
         "UI_PEACOCK_ARES_OBJ2": "Eliminate Albert Knarr with explosion caused by Propane Flask",
-        "UI_PEACOCK_ARES_OBJ3": "Eliminate Clinton Webster with explosion caused by Nitroglycerin"
+        "UI_PEACOCK_ARES_OBJ3": "Eliminate Clinton Webster with explosion caused by Nitroglycerin",
+        "UI_SEASON_CHALLENGEPACKS": "Наборы испытаний"
     },
     "chineseSimplified": {
         "UI_PEACOCK_STRINGS_PRESENT": "yes",
@@ -2283,8 +2289,8 @@
         "UI_PEACOCK_CHALLENGEPACK_CHEESECAKE_DUBAIPANPACIFY_DESC": "<li>在迪拜重新安排会议并封锁会议室。</li><li>用平底锅制伏卡尔·英格拉姆和马库斯·斯图维森特。</li><li>完成任务。</li>",
         "UI_PEACOCK_GAMECHANGERS_GLOBAL_HEADKILLONLY_NAME": "仅限头部攻击",
         "UI_PEACOCK_GAMECHANGERS_GLOBAL_HEADKILLONLY_DESC": "必须使用爆头或投掷致命近战武器消灭所有目标。",
-        "UI_MENU_PAGE_STORY_CUTSCENE_SEASON2_STORY_BLOCK_09_TITLE": "All According to Plan",
-        "UI_MENU_PAGE_STORY_CUTSCENE_SEASON2_STORY_BLOCK_10_TITLE": "A Trip to Paradise",
+        "UI_MENU_PAGE_STORY_CUTSCENE_SEASON2_STORY_BLOCK_09_TITLE": "A Trip to Paradise",
+        "UI_MENU_PAGE_STORY_CUTSCENE_SEASON2_STORY_BLOCK_10_TITLE": "All According to Plan",
         "UI_PEACOCK_CASPER": "反常探险",
         "UI_PEACOCK_CASPER1": "反常探险 - 第1关",
         "UI_PEACOCK_CASPER2": "反常探险 - 第2关",
@@ -2343,7 +2349,8 @@
         "UI_PEACOCK_ARES3": "巴克雷爆破 - 第3关",
         "UI_PEACOCK_ARES_OBJ1": "用炸弹手表电池制造爆炸消灭安德列·华盛顿",
         "UI_PEACOCK_ARES_OBJ2": "用丙烷瓶制造爆炸消灭阿尔伯特·克纳尔",
-        "UI_PEACOCK_ARES_OBJ3": "用硝化甘油制造爆炸消灭克林顿·韦伯斯特"
+        "UI_PEACOCK_ARES_OBJ3": "用硝化甘油制造爆炸消灭克林顿·韦伯斯特",
+        "UI_SEASON_CHALLENGEPACKS": "挑战包"
     },
     "chineseTraditional": {
         "UI_PEACOCK_STRINGS_PRESENT": "yes",
@@ -2617,8 +2624,8 @@
         "UI_PEACOCK_CHALLENGEPACK_CHEESECAKE_DUBAIPANPACIFY_DESC": "<li>重新安排會議並封鎖杜拜的會議室。</li><li>用煎鍋擊暈卡爾·英格倫和馬克斯·史岱文森。</li><li>完成任務。</li>",
         "UI_PEACOCK_GAMECHANGERS_GLOBAL_HEADKILLONLY_NAME": "僅頭部攻擊",
         "UI_PEACOCK_GAMECHANGERS_GLOBAL_HEADKILLONLY_DESC": "所有目標都必須透過爆頭或投擲致命的近戰武器的方式來消滅。",
-        "UI_MENU_PAGE_STORY_CUTSCENE_SEASON2_STORY_BLOCK_09_TITLE": "All According to Plan",
-        "UI_MENU_PAGE_STORY_CUTSCENE_SEASON2_STORY_BLOCK_10_TITLE": "A Trip to Paradise",
+        "UI_MENU_PAGE_STORY_CUTSCENE_SEASON2_STORY_BLOCK_09_TITLE": "A Trip to Paradise",
+        "UI_MENU_PAGE_STORY_CUTSCENE_SEASON2_STORY_BLOCK_10_TITLE": "All According to Plan",
         "UI_PEACOCK_CASPER": "脫離常規的遊蕩",
         "UI_PEACOCK_CASPER1": "脫離常規的遊蕩——關卡1",
         "UI_PEACOCK_CASPER2": "脫離常規的遊蕩——關卡2",
@@ -2677,7 +2684,8 @@
         "UI_PEACOCK_ARES3": "巴克萊破產——關卡3",
         "UI_PEACOCK_ARES_OBJ1": "用爆炸手錶電池引起的爆炸消滅安德烈·華盛頓",
         "UI_PEACOCK_ARES_OBJ2": "用丙烷瓶引起的爆炸消滅阿爾伯特·納爾",
-        "UI_PEACOCK_ARES_OBJ3": "用硝酸甘油引起的爆炸消滅克林頓·韋伯斯特"
+        "UI_PEACOCK_ARES_OBJ3": "用硝酸甘油引起的爆炸消滅克林頓·韋伯斯特",
+        "UI_SEASON_CHALLENGEPACKS": "挑戰包"
     },
     "japanese": {
         "UI_PEACOCK_STRINGS_PRESENT": "yes",
@@ -2951,8 +2959,8 @@
         "UI_PEACOCK_CHALLENGEPACK_CHEESECAKE_DUBAIPANPACIFY_DESC": "<li>Rearrange the meeting and lockdown the meeting room in Dubai.</li><li>Pacify Carl Ingram and Marcus Stuyvesant with a Frying Pan.</li><li>Complete the mission.</li>",
         "UI_PEACOCK_GAMECHANGERS_GLOBAL_HEADKILLONLY_NAME": "Head Attack Only",
         "UI_PEACOCK_GAMECHANGERS_GLOBAL_HEADKILLONLY_DESC": "All targets must be eliminated by using headshots or throwing lethal melee weapons.",
-        "UI_MENU_PAGE_STORY_CUTSCENE_SEASON2_STORY_BLOCK_09_TITLE": "All According to Plan",
-        "UI_MENU_PAGE_STORY_CUTSCENE_SEASON2_STORY_BLOCK_10_TITLE": "A Trip to Paradise",
+        "UI_MENU_PAGE_STORY_CUTSCENE_SEASON2_STORY_BLOCK_09_TITLE": "A Trip to Paradise",
+        "UI_MENU_PAGE_STORY_CUTSCENE_SEASON2_STORY_BLOCK_10_TITLE": "All According to Plan",
         "UI_PEACOCK_CASPER": "The Aberratious Stravaig",
         "UI_PEACOCK_CASPER1": "The Aberratious Stravaig - Level 1",
         "UI_PEACOCK_CASPER2": "The Aberratious Stravaig - Level 2",
@@ -3011,7 +3019,8 @@
         "UI_PEACOCK_ARES3": "The Barclay Burst - Level 3",
         "UI_PEACOCK_ARES_OBJ1": "Eliminate Andre Washington with explosion caused by Explosive Watch Battery",
         "UI_PEACOCK_ARES_OBJ2": "Eliminate Albert Knarr with explosion caused by Propane Flask",
-        "UI_PEACOCK_ARES_OBJ3": "Eliminate Clinton Webster with explosion caused by Nitroglycerin"
+        "UI_PEACOCK_ARES_OBJ3": "Eliminate Clinton Webster with explosion caused by Nitroglycerin",
+        "UI_SEASON_CHALLENGEPACKS": "チャレンジパック"
     },
     "spanishMexican": {
         "UI_PEACOCK_STRINGS_PRESENT": "yes",
@@ -3286,8 +3295,8 @@
         "UI_PEACOCK_CHALLENGEPACK_CHEESECAKE_DUBAIPANPACIFY_DESC": "<li>Rearrange the meeting and lockdown the meeting room in Dubai.</li><li>Pacify Carl Ingram and Marcus Stuyvesant with a Frying Pan.</li><li>Complete the mission.</li>",
         "UI_PEACOCK_GAMECHANGERS_GLOBAL_HEADKILLONLY_NAME": "Head Attack Only",
         "UI_PEACOCK_GAMECHANGERS_GLOBAL_HEADKILLONLY_DESC": "All targets must be eliminated by using headshots or throwing lethal melee weapons.",
-        "UI_MENU_PAGE_STORY_CUTSCENE_SEASON2_STORY_BLOCK_09_TITLE": "All According to Plan",
-        "UI_MENU_PAGE_STORY_CUTSCENE_SEASON2_STORY_BLOCK_10_TITLE": "A Trip to Paradise",
+        "UI_MENU_PAGE_STORY_CUTSCENE_SEASON2_STORY_BLOCK_09_TITLE": "A Trip to Paradise",
+        "UI_MENU_PAGE_STORY_CUTSCENE_SEASON2_STORY_BLOCK_10_TITLE": "All According to Plan",
         "UI_PEACOCK_CASPER": "The Aberratious Stravaig",
         "UI_PEACOCK_CASPER1": "The Aberratious Stravaig - Level 1",
         "UI_PEACOCK_CASPER2": "The Aberratious Stravaig - Level 2",
@@ -3346,7 +3355,8 @@
         "UI_PEACOCK_ARES3": "The Barclay Burst - Level 3",
         "UI_PEACOCK_ARES_OBJ1": "Eliminate Andre Washington with explosion caused by Explosive Watch Battery",
         "UI_PEACOCK_ARES_OBJ2": "Eliminate Albert Knarr with explosion caused by Propane Flask",
-        "UI_PEACOCK_ARES_OBJ3": "Eliminate Clinton Webster with explosion caused by Nitroglycerin"
+        "UI_PEACOCK_ARES_OBJ3": "Eliminate Clinton Webster with explosion caused by Nitroglycerin",
+        "UI_SEASON_CHALLENGEPACKS": "Paquetes de desafíos"
     },
     "portugueseBrazil": {
         "UI_PEACOCK_STRINGS_PRESENT": "yes",
@@ -3579,8 +3589,8 @@
         "UI_PEACOCK_CHALLENGEPACK_CHEESECAKE_DUBAIPANPACIFY_DESC": "<li>Rearrange the meeting and lockdown the meeting room in Dubai.</li><li>Pacify Carl Ingram and Marcus Stuyvesant with a Frying Pan.</li><li>Complete the mission.</li>",
         "UI_PEACOCK_GAMECHANGERS_GLOBAL_HEADKILLONLY_NAME": "Head Attack Only",
         "UI_PEACOCK_GAMECHANGERS_GLOBAL_HEADKILLONLY_DESC": "All targets must be eliminated by using headshots or throwing lethal melee weapons.",
-        "UI_MENU_PAGE_STORY_CUTSCENE_SEASON2_STORY_BLOCK_09_TITLE": "All According to Plan",
-        "UI_MENU_PAGE_STORY_CUTSCENE_SEASON2_STORY_BLOCK_10_TITLE": "A Trip to Paradise",
+        "UI_MENU_PAGE_STORY_CUTSCENE_SEASON2_STORY_BLOCK_09_TITLE": "A Trip to Paradise",
+        "UI_MENU_PAGE_STORY_CUTSCENE_SEASON2_STORY_BLOCK_10_TITLE": "All According to Plan",
         "UI_PEACOCK_CASPER": "The Aberratious Stravaig",
         "UI_PEACOCK_CASPER1": "The Aberratious Stravaig - Level 1",
         "UI_PEACOCK_CASPER2": "The Aberratious Stravaig - Level 2",
@@ -3639,7 +3649,8 @@
         "UI_PEACOCK_ARES3": "The Barclay Burst - Level 3",
         "UI_PEACOCK_ARES_OBJ1": "Eliminate Andre Washington with explosion caused by Explosive Watch Battery",
         "UI_PEACOCK_ARES_OBJ2": "Eliminate Albert Knarr with explosion caused by Propane Flask",
-        "UI_PEACOCK_ARES_OBJ3": "Eliminate Clinton Webster with explosion caused by Nitroglycerin"
+        "UI_PEACOCK_ARES_OBJ3": "Eliminate Clinton Webster with explosion caused by Nitroglycerin",
+        "UI_SEASON_CHALLENGEPACKS": "Pacotes de desafios"
     },
     "polish": {
         "UI_PEACOCK_STRINGS_PRESENT": "yes",
@@ -3911,8 +3922,8 @@
         "UI_PEACOCK_CHALLENGEPACK_CHEESECAKE_DUBAIPANPACIFY_DESC": "<li>Rearrange the meeting and lockdown the meeting room in Dubai.</li><li>Pacify Carl Ingram and Marcus Stuyvesant with a Frying Pan.</li><li>Complete the mission.</li>",
         "UI_PEACOCK_GAMECHANGERS_GLOBAL_HEADKILLONLY_NAME": "Head Attack Only",
         "UI_PEACOCK_GAMECHANGERS_GLOBAL_HEADKILLONLY_DESC": "All targets must be eliminated by using headshots or throwing lethal melee weapons.",
-        "UI_MENU_PAGE_STORY_CUTSCENE_SEASON2_STORY_BLOCK_09_TITLE": "All According to Plan",
-        "UI_MENU_PAGE_STORY_CUTSCENE_SEASON2_STORY_BLOCK_10_TITLE": "A Trip to Paradise",
+        "UI_MENU_PAGE_STORY_CUTSCENE_SEASON2_STORY_BLOCK_09_TITLE": "A Trip to Paradise",
+        "UI_MENU_PAGE_STORY_CUTSCENE_SEASON2_STORY_BLOCK_10_TITLE": "All According to Plan",
         "UI_PEACOCK_CASPER": "The Aberratious Stravaig",
         "UI_PEACOCK_CASPER1": "The Aberratious Stravaig - Level 1",
         "UI_PEACOCK_CASPER2": "The Aberratious Stravaig - Level 2",
@@ -3971,6 +3982,7 @@
         "UI_PEACOCK_ARES3": "The Barclay Burst - Level 3",
         "UI_PEACOCK_ARES_OBJ1": "Eliminate Andre Washington with explosion caused by Explosive Watch Battery",
         "UI_PEACOCK_ARES_OBJ2": "Eliminate Albert Knarr with explosion caused by Propane Flask",
-        "UI_PEACOCK_ARES_OBJ3": "Eliminate Clinton Webster with explosion caused by Nitroglycerin"
+        "UI_PEACOCK_ARES_OBJ3": "Eliminate Clinton Webster with explosion caused by Nitroglycerin",
+        "UI_SEASON_CHALLENGEPACKS": "Pakiety wyzwań"
     }
 }

@@ -19,6 +19,7 @@
 import type { MissionManifestObjective, RepositoryId } from "../types/types"
 import { randomUUID } from "crypto"
 import assert from "assert"
+import { nilUuid } from "../utils"
 
 /**
  * The player gets a choice of which kill method the contract should be created with.
@@ -43,14 +44,14 @@ export type ContractCreationNpcTargetPayload = {
     RepositoryId: string
     Selected: boolean
     Weapon: {
-        RepositoryId: string
+        RepositoryId: RepositoryId | undefined
         KillMethodBroad: string
         KillMethodStrict: string
         RequiredKillMethod: string
         RequiredKillMethodType: RequiredKillMethodType
     }
     Outfit: {
-        RepositoryId: string
+        RepositoryId: RepositoryId
         Required: boolean
         IsHitmanSuit: boolean
     }
@@ -207,7 +208,9 @@ export function createObjectivesForTarget(
         targetSm.TargetConditions ??= []
 
         targetSm.TargetConditions.push({
-            Type: "killmethod",
+            Type: requiresSpecificItem(params.Weapon)
+                ? "killmethod_specificitem"
+                : "killmethod",
             RepositoryId: params.Weapon.RepositoryId,
             // for contract creation it's always optional, only escalations set hard fail conditions
             HardCondition: false,
@@ -219,6 +222,21 @@ export function createObjectivesForTarget(
     }
 
     return objectives
+}
+
+/**
+ * Whether the player asked for one specific item rather than a whole kill
+ * method. Methods with no item behind them (accidents, a neck snap) come
+ * through as the nil UUID, and IOI's own contracts keep those as a plain
+ * `killmethod`, so they are not treated as item-specific here.
+ * @param weapon The weapon details from the request.
+ */
+function requiresSpecificItem(weapon: Weapon): boolean {
+    return (
+        weapon.RequiredKillMethodType ===
+            RequiredKillMethodType.SpecificRepositoryId &&
+        weapon.RepositoryId !== nilUuid
+    )
 }
 
 /**
@@ -378,50 +396,49 @@ export function genStateMachineKillSuccessCondition(
 ): KillSuccessStateCondition {
     const km = weaponToKillMethod(weapon)
 
-    if (km === ContractKillMethod.PistolElimination) {
+    // a plain pistol kill can register as either "pistol" or, at close range,
+    // "close_combat_pistol_elimination", so "any pistol" has to accept both.
+    const methodCondition =
+        km === ContractKillMethod.Pistol
+            ? {
+                  $any: {
+                      "?": {
+                          $or: [
+                              {
+                                  $eq: ["$.#", "pistol"],
+                              },
+                              {
+                                  $eq: [
+                                      "$.#",
+                                      "close_combat_pistol_elimination",
+                                  ],
+                              },
+                          ],
+                      },
+                      in: ["$Value.KillMethodBroad", "$Value.KillMethodStrict"],
+                  },
+              }
+            : {
+                  $any: {
+                      "?": {
+                          $eq: ["$.#", weapon.RequiredKillMethod],
+                      },
+                      in: ["$Value.KillMethodBroad", "$Value.KillMethodStrict"],
+                  },
+              }
+
+    if (requiresSpecificItem(weapon)) {
         return {
-            $any: {
-                "?": {
-                    $or: [
-                        {
-                            $eq: ["$.#", "pistol"],
-                        },
-                        {
-                            $eq: ["$.#", "close_combat_pistol_elimination"],
-                        },
-                    ],
+            $and: [
+                methodCondition,
+                {
+                    $eq: ["$Value.KillItemRepositoryId", weapon.RepositoryId],
                 },
-                in: ["$Value.KillMethodBroad", "$Value.KillMethodStrict"],
-            },
+            ],
         }
     }
 
-    if (km === ContractKillMethod.Pistol) {
-        return {
-            $any: {
-                "?": {
-                    $or: [
-                        {
-                            $eq: ["$.#", "pistol"],
-                        },
-                        {
-                            $eq: ["$.#", "close_combat_pistol_elimination"],
-                        },
-                    ],
-                },
-                in: ["$Value.KillMethodBroad", "$Value.KillMethodStrict"],
-            },
-        }
-    }
-
-    return {
-        $any: {
-            "?": {
-                $eq: ["$.#", weapon.RequiredKillMethod],
-            },
-            in: ["$Value.KillMethodBroad", "$Value.KillMethodStrict"],
-        },
-    }
+    return methodCondition
 }
 
 /**

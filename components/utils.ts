@@ -62,7 +62,7 @@ export const IS_LAUNCHER = process.env.IS_PEACOCK_LAUNCHER === "true"
 
 export const ServerVer: ServerVersion = {
     _Major: 8,
-    _Minor: 24,
+    _Minor: 25,
     _Build: 0,
     _Revision: 0,
 }
@@ -73,6 +73,11 @@ export const uuidRegex =
     /^[a-fA-F0-9]{8}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{12}$/
 
 export const contractTypes = ["featured", "usercreated"]
+
+/**
+ * A contract's public ID.
+ */
+export const publicIdRegex = /^\d{12}$/
 
 /**
  * A list of game versions, except scpc.

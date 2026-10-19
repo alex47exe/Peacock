@@ -363,6 +363,7 @@ export const missionsInLocation = {
         LOCATION_NEWZEALAND: ["c65019e5-43a8-4a33-8a2a-84c750a5eeb3"],
         LOCATION_MIAMI: ["c1d015b4-be08-4e44-808e-ada0f387656f"],
         LOCATION_MIAMI_COTTONMOUTH: ["f1ba328f-e3dd-4ef8-bb26-0363499fdd95"],
+        LOCATION_MIAMI_SAMBUCA: ["debdf04c-4c5b-480c-806a-b1e8b648c5ca"],
         LOCATION_COLOMBIA: ["422519be-ed2e-44df-9dac-18f739d44fd9"],
         LOCATION_COLOMBIA_ANACONDA: ["179563a4-727a-4072-b354-c9fff4e8bff0"],
         LOCATION_MUMBAI: ["0fad48d7-3d0f-4c66-8605-6cbe9c3a46d7"],
@@ -374,6 +375,7 @@ export const missionsInLocation = {
         LOCATION_NORTHSEA: ["0d225edf-40cd-4f20-a30f-b62a373801d3"],
         LOCATION_GREEDY_RACCOON: ["7a03a97d-238c-48bd-bda0-e5f279569cce"],
         LOCATION_OPULENT_STINGRAY: ["095261b5-e15b-4ca1-9bb7-001fb85c5aaa"],
+        LOCATION_OPULENT_GREENTINI: ["f840fce7-242f-435f-b482-1c990818a758"],
         LOCATION_GOLDEN_GECKO: ["7d85f2b0-80ca-49be-a2b7-d56f67faf252"],
         LOCATION_ANCESTRAL_BULLDOG: ["755984a8-fb0b-4673-8637-95cfe7d34e0f"],
         LOCATION_EDGY_FOX: ["ebcd14b2-0786-4ceb-a2a4-e771f60d0125"],
@@ -611,6 +613,7 @@ export const missionsInLocation = {
                 "b1fb40d7-c013-4c9f-bb8a-8782e980b11a",
                 "55cd7c79-f6dd-4d58-86e1-d52863488077",
             ],
+            LOCATION_OPULENT_STINGRAY: ["6b42daeb-9878-4b44-a0b9-e09377208ad5"],
             LOCATION_ANCESTRAL_BULLDOG: [
                 "bfb56fe6-06db-440a-aafe-42eeeb223fa1",
                 "80cf04de-8e0b-4f38-b094-600753e2ac24",
